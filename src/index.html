@@ -33,6 +33,9 @@
   <script src="vendor/angular2/bundles/router.dev.js"></script>
 
   <script src="thirdparty/libs.js"></script>
+
+  <script src="assets/js/ng2-translate.js"></script>
+
   <script>
     System.config({
       packages: {
@@ -40,7 +43,10 @@
           format: 'register',
           defaultExtension: 'js'
         }
-      }
+      },
+	    paths: {
+		    'ng2-translate/ng2-translate': 'assets/js/ng2-translate.js'
+	    }
     });
     System.import('app.js').then(null, console.error.bind(console));
   </script>
